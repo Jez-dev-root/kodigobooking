@@ -1,12 +1,36 @@
-# React + Vite
+# Proyecto Booking App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## ✅ Tareas completadas (Edwin)
+- [x] Crear proyecto React con Vite
+- [x] Configurar Tailwind CSS
+- [x] Crear estructura de carpetas
+- [x] Configurar Axios con JWT
+- [x] Componentes base: App, Navbar, Home, Login, Register, Dashboard
+- [x] Configurar proxy de Vite
+- [x] Landing page con banner y cards
+- [x] Diseño responsive básico
 
-Currently, two official plugins are available:
+## 🔜 Próximas tareas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Edwin
+- [ ] Mejorar estilos del Home
+- [ ] Ajustar hover y gradientes en cards
+- [ ] Mejorar UX Login/Register (mensajes de error y validaciones)
+- [ ] Documentación y despliegue en GitHub + Netlify/Vercel
 
-## Expanding the ESLint configuration
+### Dany
+- [ ] Crear slider de hoteles destacados en Home
+- [ ] Agregar filtros de búsqueda (precio, ubicación, estrellas)
+- [ ] Paginación de alojamientos
+- [ ] Mejorar responsividad de Home y Banner
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Jez
+- [ ] Mejorar Dashboard: historial y detalles de reservas
+- [ ] Crear sección perfil de usuario
+- [ ] Validar funcionalidad JWT en login y dashboard
+
+### Extras (Opcional)
+- [ ] Animaciones con framer-motion
+- [ ] Integrar librería de iconos
+- [ ] Dark mode con Tailwind
+
