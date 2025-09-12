@@ -6,11 +6,11 @@ Proyecto grupal para consumo de API de alojamientos y bookings. Inspirado en Tri
 
 ## 🚀 Integrantes y Roles
 
-| Integrante | Rol / Responsabilidad |
-|------------|----------------------|
-| Edwin      | Configuración base del proyecto, Home, Navbar, Login/Register, Landing Page inicial. |
-| Dany       | Slider de hoteles destacados, filtros de búsqueda, paginación, responsividad. |
-| Jez        | Dashboard de usuario, historial de reservas, sección perfil, mejoras UX Login/Register. |
+| Integrante                        | Rol / Responsabilidad|
+|-----------------------------------|----------------------|
+| Edwin Efrain Juarez Mezquita      | Configuración base del proyecto, Home, Navbar, Login/Register, Landing Page inicial.    |
+| Daniel de Jesus Vaquerano Mendoza | Slider de hoteles destacados, filtros de búsqueda, paginación, responsividad.           |
+| Jesua Donovan Martínez Martínez   | Dashboard de usuario, historial de reservas, sección perfil, mejoras UX Login/Register. |
 
 ---
 
