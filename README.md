@@ -48,7 +48,10 @@ kodigobooking/
 - [x] Configurar proxy de Vite
 - [x] Landing page con banner y cards
 - [x] Diseño responsive básico
-
+**Jez**
+- [x] Mejorar Dashboard: historial y detalles de reservas
+- [x] Crear sección perfil de usuario
+- [x] Mejorar UX Login/Register (mensajes de error y validaciones)
 ### Próximas tareas
 
 **Edwin**
@@ -62,10 +65,7 @@ kodigobooking/
 - [ ] Paginación de alojamientos
 - [ ] Mejorar responsividad de Home y Banner
 
-**Jez**
-- [ ] Mejorar Dashboard: historial y detalles de reservas
-- [ ] Crear sección perfil de usuario
-- [ ] Mejorar UX Login/Register (mensajes de error y validaciones)
+
 
 **Extras**
 - [ ] Animaciones con framer-motion

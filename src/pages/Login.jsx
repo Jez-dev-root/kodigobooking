@@ -1,50 +1,72 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import api from "../services/api";
+import { useContext, useState } from "react";
+import { useNavigate, Link } from "react-router-dom";
+import { AuthContext } from "../context/AuthContext";
 
 export default function Login() {
+  const navigate = useNavigate();
+  const { login } = useContext(AuthContext);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setError("");
+    setLoading(true);
     try {
-      const res = await api.post("/users/login", { email, password });
-      localStorage.setItem("token", res.data.token);
+      await login({ email, password });
       navigate("/dashboard");
     } catch (err) {
-      setError("Credenciales incorrectas");
-      console.error(err);
+      setError("Correo o contraseña inválidos");
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <form onSubmit={handleSubmit} className="bg-white p-8 rounded shadow-md w-96">
-        <h2 className="text-2xl font-bold mb-6">Login</h2>
-        {error && <p className="text-red-500 mb-4">{error}</p>}
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className="w-full p-2 border rounded mb-4"
-          required
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          className="w-full p-2 border rounded mb-4"
-          required
-        />
-        <button type="submit" className="w-full bg-indigo-600 text-white p-2 rounded hover:bg-indigo-700">
-          Login
-        </button>
-      </form>
+    <div className="min-h-[calc(100vh-56px)] flex items-center justify-center bg-gray-50">
+      <div className="bg-white p-6 rounded-lg shadow-md w-80">
+        <h2 className="text-2xl font-bold mb-4 text-center">Iniciar sesión</h2>
+        {error && (
+          <div className="mb-3 text-sm text-red-600 bg-red-50 border border-red-200 p-2 rounded">
+            {error}
+          </div>
+        )}
+        <form className="flex flex-col gap-3" onSubmit={handleSubmit} noValidate>
+          <input
+            type="email"
+            placeholder="Correo"
+            className="border p-2 rounded"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <input
+            type="password"
+            placeholder="Contraseña"
+            className="border p-2 rounded"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+          <button
+            disabled={loading}
+            className="bg-blue-600 text-white py-2 rounded hover:bg-blue-700 disabled:opacity-60"
+          >
+            {loading ? "Entrando..." : "Entrar"}
+          </button>
+        </form>
+        <p className="mt-2 text-xs text-gray-500">
+          Modo demo: usa usuario "test" y contraseña "test".
+        </p>
+        <p className="mt-3 text-sm text-center text-gray-600">
+          ¿No tienes cuenta? {" "}
+          <Link to="/register" className="text-blue-600 hover:underline">
+            Regístrate
+          </Link>
+        </p>
+      </div>
     </div>
   );
 }
