@@ -1,7 +1,5 @@
 # Booking App - React + Vite + Tailwind
 
-![Banner]([https://nubecolectiva.com/wp-content/uploads/2023/04/r1-1.png])
-
 Proyecto grupal para consumo de API de alojamientos y bookings. Inspirado en Trivago/Booking, construido con **React, Vite y Tailwind CSS**, con autenticación JWT y dashboard funcional.
 
 ---
@@ -48,7 +46,8 @@ kodigobooking/
 - [x] Configurar proxy de Vite
 - [x] Landing page con banner y cards
 - [x] Diseño responsive básico
-**Jez**
+      
+### Tareas completadas (Jezz)
 - [x] Mejorar Dashboard: historial y detalles de reservas
 - [x] Crear sección perfil de usuario
 - [x] Mejorar UX Login/Register (mensajes de error y validaciones)
@@ -118,7 +117,6 @@ http://localhost:5173/
 - Tailwind v3 configurado.
 - Proxy de Vite habilitado para evitar problemas CORS.
 - Axios configurado con JWT y baseURL hacia la API.
-- Se recomienda que cada integrante trabaje en su **rama propia** y haga pull request a `main`.
 
 ---
 
