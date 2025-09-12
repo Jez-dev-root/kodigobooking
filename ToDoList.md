@@ -13,21 +13,21 @@
 ## 🔜 Próximas tareas
 
 ### Edwin
-- [ ] Mejorar estilos del Home
-- [ ] Ajustar hover y gradientes en cards
+- [x] Mejorar estilos del Home
+- [x] Ajustar hover y gradientes en cards
 - [ ] Mejorar UX Login/Register (mensajes de error y validaciones)
 - [ ] Documentación y despliegue en GitHub + Netlify/Vercel
 
 ### Dany
-- [ ] Crear slider de hoteles destacados en Home
-- [ ] Agregar filtros de búsqueda (precio, ubicación, estrellas)
-- [ ] Paginación de alojamientos
-- [ ] Mejorar responsividad de Home y Banner
+- [x] Crear slider de hoteles destacados en Home
+- [x] Agregar filtros de búsqueda (precio, ubicación, estrellas)
+- [x] Paginación de alojamientos
+- [x] Mejorar responsividad de Home y Banner
 
 ### Jez
 - [ ] Mejorar Dashboard: historial y detalles de reservas
 - [ ] Crear sección perfil de usuario
-- [ ] Validar funcionalidad JWT en login y dashboard
+- [x] Validar funcionalidad JWT en login y dashboard
 
 ### Extras (Opcional)
 - [ ] Animaciones con framer-motion
