@@ -1,6 +1,6 @@
 # Booking App - React + Vite + Tailwind
 
-![Banner](https://via.placeholder.com/1200x300?text=Booking+App+React+Vite+Tailwind)
+![Banner]([https://nubecolectiva.com/wp-content/uploads/2023/04/r1-1.png])
 
 Proyecto grupal para consumo de API de alojamientos y bookings. Inspirado en Trivago/Booking, construido con **React, Vite y Tailwind CSS**, con autenticación JWT y dashboard funcional.
 
